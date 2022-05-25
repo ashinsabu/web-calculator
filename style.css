@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.calculator{
+    box-shadow: 2px 3px 5px 0px black;
+    margin-top: 5%;
+    background-color: #212121;
+    border: 1px solid black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* gap: 32px; */
+}
+.display{
+    box-shadow: inset 2px 3px 5px 0px black;
+    background-color: #3B3B3B;
+    border: 1px solid black;
+    height: 72px;
+    margin-bottom: 32px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #60A07F;
+    font-size: 20px;
+}
+.first-line{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.first-line button{
+    font-size: 16px;
+    box-shadow: 2px 3px 5px 0px black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    flex: 1;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+.first-line button:hover{
+    transform: translateY(-3px);
+    background-color: #9b4545;
+}
+.first-line button:active{
+    transform: translateY(2px);
+    background-color: #9b4545;
+}
+
+.clear-button{
+    background-color: #F08080;
+}
+.delete-button{
+    background-color: #F08080;
+
+}
+.line{
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}   
+.line button{
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 3px 5px 0px black;
+    background-color: #616161;
+    height: 48px;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+
+}
+.digitbtn:hover{
+    transform: translateY(-3px);
+    background-color: #BDBDBD;
+}
+.digitbtn:active{
+    transform: translateY(2px);
+}
+.operatorbtn:hover{
+    transform: translateY(-3px);
+    background-color: aquamarine;
+}
+.operatorbtn:active{
+    transform: translateY(2px);
+    background-color: aquamarine;
+}
+
